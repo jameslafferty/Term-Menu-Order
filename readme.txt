@@ -1,6 +1,6 @@
 === Term Menu Order ===
 Contributors: jameslafferty
-Tags: 
+Tags: developer, menu order, terms, taxonomy, taxonomies, wp_terms, menu_order
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSL4JTA4KMZLG
 Requires at least: 3.0.1
 Tested up to: 3.0.3
@@ -25,7 +25,9 @@ fetch terms to use 'menu_order' as a sort order. In particular, get_terms('categ
 There are no Frequently Asked Questions yet... This is the first release!
 
 == Screenshots ==
-1.
+1. 'menu_order' available in Quick Edit.
+2. 'menu_order' available when adding a new term.
+3. 'menu_order' available when editing a term.
 
 == Changelog ==
 = 0.1 =
