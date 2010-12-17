@@ -24,7 +24,7 @@ class NS_TMO_Plugin {
 
 		register_deactivation_hook(self::$plugin_path, array(&$this, 'deactivate'));
 		
-		add_action('after_setup_theme', array(&$this, 'init'));
+		add_action('init', array(&$this, 'init'));
 		
 	}
 	
