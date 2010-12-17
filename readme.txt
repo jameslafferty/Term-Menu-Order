@@ -30,9 +30,15 @@ There are no Frequently Asked Questions yet... This is the first release!
 3. 'menu_order' available when editing a term.
 
 == Changelog ==
+= 0.1.2 =
+* Attached plugin init to 'init' action hook instead of 'after_theme_setup' to catch custom taxonomies added by theme.
+
 = 0.1 =
 * First release.
 
 == Upgrade Notice ==
+= 0.1.2 =
+* Bug fix for custom taxonomies added in the theme.
+
 = 0.1 =
 * First release.
