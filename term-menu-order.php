@@ -4,7 +4,7 @@ Plugin Name: Term Menu Order
 Plugin URI: https://github.com/kalchas
 Description: 
 Author: James Lafferty
-Version: 0.1.2
+Version: 0.1.3
 Author URI: https://github.com/kalchas
 License: GPL2
 */
@@ -37,13 +37,22 @@ if (! function_exists('buffered_autoloader')) {
 	
 	function buffered_autoloader ($c) {
 
-		spl_autoload($c);
+		try {
+		
+			spl_autoload($c);
+			
+		} catch (Exception $e) {
+			
+			$message = $e->getMessage();
+			
+			return $message;
+			
+		}
+		
 
 	}
 	
-}
-
-spl_autoload_register('buffered_autoloader');
+}spl_autoload_register('buffered_autoloader');
 
 /**
  * Get the plugin object. All the bookkeeping and other setup stuff happens here.
