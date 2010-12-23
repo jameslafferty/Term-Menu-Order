@@ -30,6 +30,8 @@ There are no Frequently Asked Questions yet... This is the first release!
 3. 'menu_order' available when editing a term.
 
 == Changelog ==
+= 0.1.3 =
+Updated autoloader to include try... catch block for handling autoload exceptions.
 = 0.1.2 =
 * Attached plugin init to 'init' action hook instead of 'after_theme_setup' to catch custom taxonomies added by theme.
 
@@ -37,6 +39,9 @@ There are no Frequently Asked Questions yet... This is the first release!
 * First release.
 
 == Upgrade Notice ==
+= 0.1.3
+* Bug fix for autoloader error. Error is of the form "Fatal error: Uncaught exception 'LogicException' with message...".
+
 = 0.1.2 =
 * Bug fix for custom taxonomies added in the theme.
 
