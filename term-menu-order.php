@@ -52,7 +52,9 @@ if (! function_exists('buffered_autoloader')) {
 
 	}
 	
-}spl_autoload_register('buffered_autoloader');
+}
+
+spl_autoload_register('buffered_autoloader');
 
 /**
  * Get the plugin object. All the bookkeeping and other setup stuff happens here.
