@@ -12,6 +12,8 @@ class NS_TMO_Plugin {
 	
 	private static $taxonomies;
 	
+	private static $textdomain = 'mailchimp-widget';
+	
 	private function __construct () {
 		
 		self::$plugin_path = realpath(dirname(__FILE__) . '/../term-menu-order.php');
@@ -25,6 +27,8 @@ class NS_TMO_Plugin {
 		register_deactivation_hook(self::$plugin_path, array(&$this, 'deactivate'));
 		
 		add_action('init', array(&$this, 'init'));
+		
+		self::load_text_domain();
 		
 	}
 	
@@ -142,6 +146,12 @@ class NS_TMO_Plugin {
 		add_action('edit_term', array(&$this, 'add_edit_menu_order'));
 		
 		add_action('quick_edit_custom_box', array(&$this, 'quick_edit_menu_order'), 10, 3);
+		
+	}
+	
+	private static function load_text_domain () {
+		
+		load_plugin_textdomain(self::$textdomain, null, str_replace('lib', 'languages', dirname(plugin_basename(__FILE__))));
 		
 	}
 	
