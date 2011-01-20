@@ -4,7 +4,7 @@ Plugin Name: Term Menu Order
 Plugin URI: https://github.com/kalchas
 Description: 
 Author: James Lafferty
-Version: 0.1.3
+Version: 0.2
 Author URI: https://github.com/kalchas
 License: GPL2
 */

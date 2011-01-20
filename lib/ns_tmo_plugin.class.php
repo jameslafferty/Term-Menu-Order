@@ -34,7 +34,7 @@ class NS_TMO_Plugin {
 	
 	public function add_column_header ($columns) {
 		
-		$columns['menu_order'] = __('Order');
+		$columns['menu_order'] = __('Order', 'term-menu-order');
 		
 		return $columns;
  		
@@ -64,7 +64,7 @@ class NS_TMO_Plugin {
 	
 	public function menu_order_add_form_field () {
 		
-		$form_field = '<div class="form-field"><label for="' . self::$form_field_name . '">' . __('Order') . '</label><input name="' . self::$form_field_name . '" id="' . self::$form_field_name . '" type="text" value="0" size="10" /><p>' . __('This works like the &#8220;Order&#8220; field for pages.') . '</p></div>';
+		$form_field = '<div class="form-field"><label for="' . self::$form_field_name . '">' . __('Order', 'term-menu-order') . '</label><input name="' . self::$form_field_name . '" id="' . self::$form_field_name . '" type="text" value="0" size="10" /><p>' . __('This works like the &#8220;Order&#8220; field for pages.', 'term-menu-order') . '</p></div>';
 		
 		echo $form_field;
 		
@@ -72,7 +72,7 @@ class NS_TMO_Plugin {
 	
 	public function menu_order_edit_form_field ($term) {
 		
-		$form_field = '<tr class="form-field"><th scope="row" valign="top"><label for="' . self::$form_field_name . '">' . __('Order')  . '</label></th><td><input name="' . self::$form_field_name . '" id="' . self::$form_field_name . '" type="text" value="' . $term->menu_order . '" size="10" /><p class="description">' . __('This works like the &#8220;Order&#8220; field for pages.') .'</p></td></tr>';
+		$form_field = '<tr class="form-field"><th scope="row" valign="top"><label for="' . self::$form_field_name . '">' . __('Order', 'term-menu-order')  . '</label></th><td><input name="' . self::$form_field_name . '" id="' . self::$form_field_name . '" type="text" value="' . $term->menu_order . '" size="10" /><p class="description">' . __('This works like the &#8220;Order&#8220; field for pages.', 'term-menu-order') .'</p></td></tr>';
 		
 		echo $form_field;
 		
@@ -80,7 +80,7 @@ class NS_TMO_Plugin {
 	
 	public function quick_edit_menu_order () {
 		
-		$menu_order_field = '<fieldset><div class="inline-edit-col"><label><span class="title">' . __( 'Order' ) . '</span><span class="input-text-wrap"><input class="ptitle" name="'. self::$form_field_name . '" type="text" value="" /></span></label></div></fieldset>';
+		$menu_order_field = '<fieldset><div class="inline-edit-col"><label><span class="title">' . __( 'Order' , 'term-menu-order') . '</span><span class="input-text-wrap"><input class="ptitle" name="'. self::$form_field_name . '" type="text" value="" /></span></label></div></fieldset>';
 		
 		$menu_order_field .= '<script type="text/javascript">
 		

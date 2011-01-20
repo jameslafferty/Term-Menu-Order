@@ -30,8 +30,13 @@ There are no Frequently Asked Questions yet... This is the first release!
 3. 'menu_order' available when editing a term.
 
 == Changelog ==
+
+= 0.2 = 
+* Added French language support. Thank you to Frederick Marcoux for this contribution!
+
 = 0.1.3 =
-Updated autoloader to include try... catch block for handling autoload exceptions.
+* Updated autoloader to include try... catch block for handling autoload exceptions.
+
 = 0.1.2 =
 * Attached plugin init to 'init' action hook instead of 'after_theme_setup' to catch custom taxonomies added by theme.
 
@@ -39,6 +44,9 @@ Updated autoloader to include try... catch block for handling autoload exception
 * First release.
 
 == Upgrade Notice ==
+= 0.2 =
+* Adds French language support.
+
 = 0.1.3
 * Bug fix for autoloader error. Error is of the form "Fatal error: Uncaught exception 'LogicException' with message...".
 
@@ -47,3 +55,11 @@ Updated autoloader to include try... catch block for handling autoload exception
 
 = 0.1 =
 * First release.
+
+== Internationalization (i18n) ==
+
+This plugin has been translated into the languages listed below:
+
+* fr_FR - French. Thank you to Frederick Marcoux for contributing!
+
+If you're interested in doing a translation into your language, please let me know.
