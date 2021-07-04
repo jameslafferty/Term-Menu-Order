@@ -20,12 +20,12 @@ msgstr ""
 #: lib/ns_tmo_plugin.class.php:75
 #: lib/ns_tmo_plugin.class.php:83
 msgid "Order"
-msgstr "Commande"
+msgstr "Ordre"
 
 #: lib/ns_tmo_plugin.class.php:67
 #: lib/ns_tmo_plugin.class.php:75
 msgid "This works like the &#8220;Order&#8220; field for pages."
-msgstr "Ceci fonctionne comme le champ Commande pour les pages."
+msgstr "Ceci fonctionne comme le champ Ordre (`menu_order`) des pages."
 
 #. Plugin Name of the plugin/theme
 msgid "Term Menu Order"
